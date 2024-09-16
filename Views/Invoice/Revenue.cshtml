@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Doanh thu";
+}
+
+<h2>Doanh thu </h2>
+
+<!-- Hiển thị tổng vốn đầu tư -->
+<h3>Tổng vốn đầu tư vào hệ thống</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Tổng vốn trong kho(VNĐ)</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.TotalInvestedCapital</td>
+    </tr>
+</table>
+<!-- Doanh thu hôm nay -->
+<h3>Hôm nay</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Doanh thu(VNĐ)</th>
+        <th>Vốn nhập vào</th>
+        <th>Lãi suất</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.TodayRevenue</td>
+        <td>@ViewBag.TodayCapitalCost</td>
+        <td>@ViewBag.TodayProfit</td>
+    </tr>
+</table>
+
+<!-- Doanh thu tuần này -->
+<h3>Tuần này</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Doanh thu(VNĐ)</th>
+        <th>Vốn nhập vào</th>
+        <th>Lãi suất</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.WeekRevenue</td>
+        <td>@ViewBag.WeekCapitalCost</td>
+        <td>@ViewBag.WeekProfit</td>
+    </tr>
+</table>
+
+<!-- Doanh thu tháng này -->
+<h3>Tháng này</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Doanh thu(VNĐ)</th>
+        <th>Vốn nhập vào</th>
+        <th>Lãi suất</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.MonthRevenue</td>
+        <td>@ViewBag.MonthCapitalCost</td>
+        <td>@ViewBag.MonthProfit</td>
+    </tr>
+</table>
+
+<!-- Doanh thu năm nay -->
+<h3>Năm nay</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>Doanh thu(VNĐ)</th>
+        <th>Vốn nhập vào</th>
+        <th>Lãi suất</th>
+    </tr>
+    <tr>
+        <td>@ViewBag.YearRevenue</td>
+        <td>@ViewBag.YearCapitalCost</td>
+        <td>@ViewBag.YearProfit</td>
+    </tr>
+</table>

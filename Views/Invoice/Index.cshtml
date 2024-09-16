@@ -1,0 +1,38 @@
+﻿@model List<Grocery_store.Models.Invoice>
+
+<h2>Danh sách hóa đơn</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Thêm Đơn hàng</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã hóa đơn</th>
+            <th>Ngày lập</th>
+            <th>Tổng tiền</th>
+            <th>Chiết khấu</th>
+            <th>Số tiền cuối cùng</th>
+            <th>Chi tiết hóa đơn</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var invoice in Model)
+        {
+            <tr>
+                <td>@invoice.Id</td>
+                <td>@invoice.Date.ToString("dd/MM/yyyy")</td>
+                <td>@invoice.TotalAmount</td>
+                <td>@invoice.Discount</td>
+                <td>@invoice.FinalAmount</td>
+                <td>
+                    <ul>
+                        @foreach (var detail in invoice.OrderDetails)
+                        {
+                            <li>
+                                Sản phẩm: @detail.Product?.Name - Số lượng: @detail.Quantity - Giá: @detail.UnitPrice
+                            </li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

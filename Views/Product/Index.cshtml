@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Grocery_store.Models.Product>
+
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <a asp-action="Create" class="btn btn-primary mb-3">Thêm sản phẩm</a>
+
+    @using (Html.BeginForm("Index", "Product", FormMethod.Get))
+    {
+        <div class="input-group" style="width: 300px;">
+            <input type="text" name="searchTerm" placeholder="Tìm kiếm..." class="form-control" value="@Context.Request.Query["searchTerm"].FirstOrDefault()" />
+            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+    }
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Số lượng</th>
+            <th>Giá nhập</th>
+            <th>Giá bán lẻ</th>
+            <th>Giá bán buôn</th>
+            <th>Đơn vị đo</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" alt="@product.Name" width="100" />
+                    }
+                    else
+                    {
+                        <span>Không có hình ảnh</span>
+                    }
+                </td>
+                <td>
+                    @if (product.Quantity <= 0)
+                    {
+                        <span class="text-danger">Hết hàng</span>
+                    }
+                    else
+                    {
+                        @product.Quantity
+                    }
+                </td>
+                <td>@product.ImportPrice</td>
+                <td>@product.RetailPrice</td>
+                <td>@product.WholesalePrice</td>
+                <td>@(product.UnitOfMeasure != null ? product.UnitOfMeasure.Name : "Không có đơn vị đo")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-warning">Chỉnh sửa</a>
+                    <form asp-action="DeleteConfirmed" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');">
+                        <input type="hidden" name="id" value="@product.Id" />
+                        <button type="submit" class="btn btn-danger">Xóa</button>
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

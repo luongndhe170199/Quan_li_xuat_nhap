@@ -1,0 +1,23 @@
+﻿@model Grocery_store.Models.Customer
+
+@{
+    ViewData["Title"] = "Chỉnh sửa khách hàng";
+}
+
+<h2>Chỉnh sửa khách hàng</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label for="Name">Tên khách hàng</label>
+        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" required />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" />
+    </div>
+    <div class="form-group">
+        <label for="Phone">Số điện thoại</label>
+        <input type="text" class="form-control" id="Phone" name="Phone" value="@Model.Phone" />
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+</form>
