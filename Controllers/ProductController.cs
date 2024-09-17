@@ -16,7 +16,7 @@ namespace Grocery_store.Controllers
         public IActionResult Index(string searchTerm)
         {
             // Lấy danh sách sản phẩm từ database
-            var products = _context.Products.Include(p => p.UnitOfMeasure).AsQueryable();
+            var products = _context.Products.Include(p => p.UnitOfMeasure).OrderBy(p=>p.Name).AsQueryable();
 
             // Nếu có từ khóa tìm kiếm, lọc theo tên sản phẩm
             if (!string.IsNullOrEmpty(searchTerm))

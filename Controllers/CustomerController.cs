@@ -17,7 +17,7 @@ namespace Grocery_store.Controllers
         // Hiển thị danh sách khách hàng
         public IActionResult Index()
         {
-            var customers = _context.Customers.ToList();
+            var customers = _context.Customers.OrderBy(c=>c.Name).ToList();
             return View(customers);
         }
 

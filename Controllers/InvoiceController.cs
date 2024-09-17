@@ -16,8 +16,15 @@ namespace Grocery_store.Controllers
         // Hiển thị form tạo hóa đơn
         public IActionResult Create()
         {
-            var customerList = _context.Customers.ToList();
-            var productList = _context.Products.ToList();
+            // Lấy danh sách khách hàng và sắp xếp theo tên (bảng chữ cái)
+            var customerList = _context.Customers
+                                       .OrderBy(c => c.Name) // Sắp xếp theo bảng chữ cái
+                                       .ToList();
+
+            // Lấy danh sách sản phẩm và sắp xếp theo tên (bảng chữ cái)
+            var productList = _context.Products
+                                      .OrderBy(p => p.Name) // Sắp xếp theo bảng chữ cái
+                                      .ToList();
 
             if (!customerList.Any())
             {
@@ -240,5 +247,133 @@ namespace Grocery_store.Controllers
             ViewBag.TotalInvestedCapital = totalInvestedCapital;
             return View();
         }
+
+        [HttpGet]
+        public IActionResult SearchRevenue(DateTime startDate, DateTime endDate)
+        {
+            // Kiểm tra ngày hợp lệ
+            if (startDate > endDate)
+            {
+                ModelState.AddModelError("", "Ngày bắt đầu không thể lớn hơn ngày kết thúc.");
+                return RedirectToAction("Revenue");
+            }
+
+            // Tính toán doanh thu trong khoảng thời gian tìm kiếm
+            var searchRevenue = GetRevenue(startDate, endDate);
+            var searchCapitalCost = GetCapitalCost(startDate, endDate);
+            var searchProfit = GetProfit(startDate, endDate);
+
+            // Ngày hiện tại
+            var today = DateTime.Now;
+
+            // Doanh thu hôm nay
+            var todayRevenue = GetRevenue(today.Date, today.Date);
+
+            // Doanh thu tuần này
+            var startOfWeek = today.AddDays(-(int)today.DayOfWeek);
+            var weekRevenue = GetRevenue(startOfWeek, today);
+
+            // Doanh thu tháng này
+            var startOfMonth = new DateTime(today.Year, today.Month, 1);
+            var monthRevenue = GetRevenue(startOfMonth, today);
+
+            // Doanh thu năm nay
+            var startOfYear = new DateTime(today.Year, 1, 1);
+            var yearRevenue = GetRevenue(startOfYear, today);
+
+            // Tính vốn nhập vào và lãi suất cho từng khoảng thời gian
+            var todayCapitalCost = GetCapitalCost(today.Date, today.Date);
+            var todayProfit = GetProfit(today.Date, today.Date);
+
+            var weekCapitalCost = GetCapitalCost(startOfWeek, today);
+            var weekProfit = GetProfit(startOfWeek, today);
+
+            var monthCapitalCost = GetCapitalCost(startOfMonth, today);
+            var monthProfit = GetProfit(startOfMonth, today);
+
+            var yearCapitalCost = GetCapitalCost(startOfYear, today);
+            var yearProfit = GetProfit(startOfYear, today);
+
+            // Tính tổng vốn đầu tư vào toàn bộ hệ thống
+            var totalInvestedCapital = GetTotalInvestedCapital();
+
+            // Truyền dữ liệu tìm kiếm vào ViewBag
+            ViewBag.SearchRevenue = searchRevenue;
+            ViewBag.SearchCapitalCost = searchCapitalCost;
+            ViewBag.SearchProfit = searchProfit;
+            ViewBag.StartDate = startDate.ToString("dd/MM/yyyy");
+            ViewBag.EndDate = endDate.ToString("dd/MM/yyyy");
+
+            // Truyền các dữ liệu khác để hiển thị không mất đi sau khi tìm kiếm
+            ViewBag.TodayRevenue = todayRevenue;
+            ViewBag.WeekRevenue = weekRevenue;
+            ViewBag.MonthRevenue = monthRevenue;
+            ViewBag.YearRevenue = yearRevenue;
+
+            ViewBag.TodayCapitalCost = todayCapitalCost;
+            ViewBag.TodayProfit = todayProfit;
+
+            ViewBag.WeekCapitalCost = weekCapitalCost;
+            ViewBag.WeekProfit = weekProfit;
+
+            ViewBag.MonthCapitalCost = monthCapitalCost;
+            ViewBag.MonthProfit = monthProfit;
+
+            ViewBag.YearCapitalCost = yearCapitalCost;
+            ViewBag.YearProfit = yearProfit;
+
+            ViewBag.TotalInvestedCapital = totalInvestedCapital;
+
+            // Trả về View "Revenue"
+            return View("Revenue");
+        }
+
+        public IActionResult GetChartData()
+        {
+            // Ngày hiện tại
+            var today = DateTime.Now;
+
+            // Tính doanh thu và lãi suất theo 12 tháng
+            var months = new[] {
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    };
+
+            // Dữ liệu doanh thu và lãi suất theo tháng
+            var revenue = new[] {
+        GetRevenue(new DateTime(today.Year, 1, 1), new DateTime(today.Year, 1, 31)),
+        GetRevenue(new DateTime(today.Year, 2, 1), new DateTime(today.Year, 2, 28)),
+        GetRevenue(new DateTime(today.Year, 3, 1), new DateTime(today.Year, 3, 31)),
+        GetRevenue(new DateTime(today.Year, 4, 1), new DateTime(today.Year, 4, 30)),
+        GetRevenue(new DateTime(today.Year, 5, 1), new DateTime(today.Year, 5, 31)),
+        GetRevenue(new DateTime(today.Year, 6, 1), new DateTime(today.Year, 6, 30)),
+        GetRevenue(new DateTime(today.Year, 7, 1), new DateTime(today.Year, 7, 31)),
+        GetRevenue(new DateTime(today.Year, 8, 1), new DateTime(today.Year, 8, 31)),
+        GetRevenue(new DateTime(today.Year, 9, 1), new DateTime(today.Year, 9, 30)),
+        GetRevenue(new DateTime(today.Year, 10, 1), new DateTime(today.Year, 10, 31)),
+        GetRevenue(new DateTime(today.Year, 11, 1), new DateTime(today.Year, 11, 30)),
+        GetRevenue(new DateTime(today.Year, 12, 1), new DateTime(today.Year, 12, 31))
+    };
+
+            var profit = new[] {
+        GetProfit(new DateTime(today.Year, 1, 1), new DateTime(today.Year, 1, 31)),
+        GetProfit(new DateTime(today.Year, 2, 1), new DateTime(today.Year, 2, 28)),
+        GetProfit(new DateTime(today.Year, 3, 1), new DateTime(today.Year, 3, 31)),
+        GetProfit(new DateTime(today.Year, 4, 1), new DateTime(today.Year, 4, 30)),
+        GetProfit(new DateTime(today.Year, 5, 1), new DateTime(today.Year, 5, 31)),
+        GetProfit(new DateTime(today.Year, 6, 1), new DateTime(today.Year, 6, 30)),
+        GetProfit(new DateTime(today.Year, 7, 1), new DateTime(today.Year, 7, 31)),
+        GetProfit(new DateTime(today.Year, 8, 1), new DateTime(today.Year, 8, 31)),
+        GetProfit(new DateTime(today.Year, 9, 1), new DateTime(today.Year, 9, 30)),
+        GetProfit(new DateTime(today.Year, 10, 1), new DateTime(today.Year, 10, 31)),
+        GetProfit(new DateTime(today.Year, 11, 1), new DateTime(today.Year, 11, 30)),
+        GetProfit(new DateTime(today.Year, 12, 1), new DateTime(today.Year, 12, 31))
+    };
+
+            return Json(new { months, revenue, profit });
+        }
+
+
+
     }
 }

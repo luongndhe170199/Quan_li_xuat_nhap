@@ -83,3 +83,4 @@ C:\Solution PRN212\Grocery_store\obj\Debug\net7.0\refint\Grocery_store.dll
 C:\Solution PRN212\Grocery_store\obj\Debug\net7.0\Grocery_store.pdb
 C:\Solution PRN212\Grocery_store\obj\Debug\net7.0\Grocery_store.genruntimeconfig.cache
 C:\Solution PRN212\Grocery_store\obj\Debug\net7.0\ref\Grocery_store.dll
+C:\Solution PRN212\Grocery_store\obj\Debug\net7.0\Grocery_store.sourcelink.json

@@ -1,16 +1,20 @@
 ﻿@model List<Grocery_store.Models.Invoice>
 
-<h2>Danh sách hóa đơn</h2>
+<h2 class="text-center mt-4">Danh sách hóa đơn</h2>
+
+<!-- Nút thêm đơn hàng -->
 <a asp-action="Create" class="btn btn-primary mb-3">Thêm Đơn hàng</a>
-<table class="table table-bordered">
-    <thead>
+
+<!-- Bảng hóa đơn -->
+<table class="table table-hover table-bordered text-center">
+    <thead class="thead-dark">
         <tr>
-            <th>Mã hóa đơn</th>
-            <th>Ngày lập</th>
-            <th>Tổng tiền</th>
-            <th>Chiết khấu</th>
-            <th>Số tiền cuối cùng</th>
-            <th>Chi tiết hóa đơn</th>
+            <th scope="col">Mã hóa đơn</th>
+            <th scope="col">Ngày lập</th>
+            <th scope="col">Tổng tiền (VNĐ)</th>
+            <th scope="col">Chiết khấu (VNĐ)</th>
+            <th scope="col">Số tiền cuối cùng (VNĐ)</th>
+            <th scope="col">Chi tiết hóa đơn</th>
         </tr>
     </thead>
     <tbody>
@@ -19,18 +23,35 @@
             <tr>
                 <td>@invoice.Id</td>
                 <td>@invoice.Date.ToString("dd/MM/yyyy")</td>
-                <td>@invoice.TotalAmount</td>
-                <td>@invoice.Discount</td>
-                <td>@invoice.FinalAmount</td>
+                <td>@String.Format("{0:N0}", invoice.TotalAmount)</td>
+                <td>@String.Format("{0:N0}", invoice.Discount)</td>
+                <td>@String.Format("{0:N0}", invoice.FinalAmount)</td>
                 <td>
-                    <ul>
-                        @foreach (var detail in invoice.OrderDetails)
-                        {
-                            <li>
-                                Sản phẩm: @detail.Product?.Name - Số lượng: @detail.Quantity - Giá: @detail.UnitPrice
-                            </li>
-                        }
-                    </ul>
+                    <!-- Dropdown để hiển thị chi tiết hóa đơn -->
+                    <button class="btn btn-info btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#details-@invoice.Id" aria-expanded="false" aria-controls="details-@invoice.Id">
+                        Xem chi tiết
+                    </button>
+                    <div class="collapse mt-2" id="details-@invoice.Id">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var detail in invoice.OrderDetails)
+                                {
+                                    <tr>
+                                        <td>@detail.Product?.Name</td>
+                                        <td>@detail.Quantity</td>
+                                        <td>@String.Format("{0:N0}", detail.UnitPrice)</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </td>
             </tr>
         }

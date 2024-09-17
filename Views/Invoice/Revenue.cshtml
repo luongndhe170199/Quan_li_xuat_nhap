@@ -2,74 +2,203 @@
     ViewBag.Title = "Doanh thu";
 }
 
-<h2>Doanh thu </h2>
+<!-- Phần tiêu đề trang -->
+<h2 class="text-center mt-4">Thống Kê Doanh Thu và Lãi Suất</h2>
+
+<!-- Form tìm kiếm doanh thu theo khoảng thời gian -->
+<section class="search-section mt-5 mb-5">
+    <h3 class="text-center mb-4">Tìm kiếm doanh thu theo khoảng thời gian</h3>
+    <div class="container">
+        <form method="get" action="/Invoice/SearchRevenue" class="row justify-content-center">
+            <div class="form-group col-md-4">
+                <label for="startDate">Ngày bắt đầu:</label>
+                <input type="date" id="startDate" name="startDate" class="form-control" required />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="endDate">Ngày kết thúc:</label>
+                <input type="date" id="endDate" name="endDate" class="form-control" required />
+            </div>
+            <div class="form-group col-md-2 align-self-end">
+                <button type="submit" class="btn btn-primary btn-block">Tìm kiếm</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Hiển thị kết quả tìm kiếm nếu có -->
+@if (ViewBag.SearchRevenue != null)
+{
+    <section class="result-section mt-5">
+        <h3 class="text-center">Kết quả tìm kiếm từ @ViewBag.StartDate đến @ViewBag.EndDate</h3>
+        <div class="container mt-4">
+            <table class="table table-hover table-bordered text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Doanh thu (VNĐ)</th>
+                        <th>Vốn nhập vào</th>
+                        <th>Lãi suất</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@ViewBag.SearchRevenue</td>
+                        <td>@ViewBag.SearchCapitalCost</td>
+                        <td>@ViewBag.SearchProfit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+}
 
 <!-- Hiển thị tổng vốn đầu tư -->
-<h3>Tổng vốn đầu tư vào hệ thống</h3>
-<table class="table table-bordered">
-    <tr>
-        <th>Tổng vốn trong kho(VNĐ)</th>
-    </tr>
-    <tr>
-        <td>@ViewBag.TotalInvestedCapital</td>
-    </tr>
-</table>
-<!-- Doanh thu hôm nay -->
-<h3>Hôm nay</h3>
-<table class="table table-bordered">
-    <tr>
-        <th>Doanh thu(VNĐ)</th>
-        <th>Vốn nhập vào</th>
-        <th>Lãi suất</th>
-    </tr>
-    <tr>
-        <td>@ViewBag.TodayRevenue</td>
-        <td>@ViewBag.TodayCapitalCost</td>
-        <td>@ViewBag.TodayProfit</td>
-    </tr>
-</table>
+<section class="investment-section mt-5">
+    <h3 class="text-center">Tổng vốn đầu tư vào hệ thống</h3>
+    <div class="container mt-4">
+        <table class="table table-hover table-bordered text-center">
+            <thead class="thead-light">
+                <tr>
+                    <th>Tổng vốn trong kho (VNĐ)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@ViewBag.TotalInvestedCapital</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 
-<!-- Doanh thu tuần này -->
-<h3>Tuần này</h3>
-<table class="table table-bordered">
-    <tr>
-        <th>Doanh thu(VNĐ)</th>
-        <th>Vốn nhập vào</th>
-        <th>Lãi suất</th>
-    </tr>
-    <tr>
-        <td>@ViewBag.WeekRevenue</td>
-        <td>@ViewBag.WeekCapitalCost</td>
-        <td>@ViewBag.WeekProfit</td>
-    </tr>
-</table>
+<!-- Hiển thị bảng doanh thu hôm nay, tuần, tháng và năm -->
+<section class="statistics-section mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Hôm nay</h3>
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Doanh thu (VNĐ)</th>
+                            <th>Vốn nhập vào</th>
+                            <th>Lãi suất</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@ViewBag.TodayRevenue</td>
+                            <td>@ViewBag.TodayCapitalCost</td>
+                            <td>@ViewBag.TodayProfit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h3>Tuần này</h3>
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Doanh thu (VNĐ)</th>
+                            <th>Vốn nhập vào</th>
+                            <th>Lãi suất</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@ViewBag.WeekRevenue</td>
+                            <td>@ViewBag.WeekCapitalCost</td>
+                            <td>@ViewBag.WeekProfit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Tháng này</h3>
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Doanh thu (VNĐ)</th>
+                            <th>Vốn nhập vào</th>
+                            <th>Lãi suất</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@ViewBag.MonthRevenue</td>
+                            <td>@ViewBag.MonthCapitalCost</td>
+                            <td>@ViewBag.MonthProfit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h3>Năm nay</h3>
+                <table class="table table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Doanh thu (VNĐ)</th>
+                            <th>Vốn nhập vào</th>
+                            <th>Lãi suất</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@ViewBag.YearRevenue</td>
+                            <td>@ViewBag.YearCapitalCost</td>
+                            <td>@ViewBag.YearProfit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Doanh thu tháng này -->
-<h3>Tháng này</h3>
-<table class="table table-bordered">
-    <tr>
-        <th>Doanh thu(VNĐ)</th>
-        <th>Vốn nhập vào</th>
-        <th>Lãi suất</th>
-    </tr>
-    <tr>
-        <td>@ViewBag.MonthRevenue</td>
-        <td>@ViewBag.MonthCapitalCost</td>
-        <td>@ViewBag.MonthProfit</td>
-    </tr>
-</table>
+<!-- Biểu đồ doanh thu và lãi suất -->
+<section class="chart-section mt-5">
+    <div class="container text-center">
+        <h3>Biểu đồ Doanh thu và Lãi suất</h3>
+        <canvas id="revenueChart" width="800" height="400"></canvas>
+    </div>
+</section>
 
-<!-- Doanh thu năm nay -->
-<h3>Năm nay</h3>
-<table class="table table-bordered">
-    <tr>
-        <th>Doanh thu(VNĐ)</th>
-        <th>Vốn nhập vào</th>
-        <th>Lãi suất</th>
-    </tr>
-    <tr>
-        <td>@ViewBag.YearRevenue</td>
-        <td>@ViewBag.YearCapitalCost</td>
-        <td>@ViewBag.YearProfit</td>
-    </tr>
-</table>
+<!-- Script cho Chart.js -->
+<script>
+    // Lấy dữ liệu từ action GetChartData
+    fetch('/Invoice/GetChartData')
+        .then(response => response.json())
+        .then(data => {
+            const ctx = document.getElementById('revenueChart').getContext('2d');
+            const revenueChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: data.months, // 12 tháng
+                    datasets: [
+                        {
+                            label: 'Doanh thu ( VND)',
+                            data: data.revenue, // Doanh thu
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Lãi suất ( VND)',
+                            data: data.profit, // Lãi suất
+                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+</script>

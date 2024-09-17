@@ -4,46 +4,85 @@
     ViewData["Title"] = "Tạo Hóa Đơn";
 }
 
-<h2>Tạo Hóa Đơn</h2>
+<h2 class="text-center mt-4 mb-4">Tạo Hóa Đơn</h2>
 
-<form asp-action="Create" asp-controller="Invoice" method="post">
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<div class="container">
+    <form asp-action="Create" asp-controller="Invoice" method="post">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    <div class="form-group">
-        <label for="Customer">Khách hàng</label>
-        <select class="form-control" asp-items="@(new SelectList(ViewBag.CustomerList, "Id", "Name"))" name="CustomerId"></select>
-    </div>
-
-    <!-- Khu vực thêm sản phẩm -->
-    <h3>Sản phẩm</h3>
-    <div id="product-list">
-        <div class="form-group product-item">
-            <label for="Product">Sản phẩm</label>
-            <select class="form-control" asp-items="@(new SelectList(ViewBag.ProductList, "Id", "Name"))" name="productIds"></select>
-
-            <label for="Quantity">Số lượng</label>
-            <input type="number" class="form-control" name="quantities" min="1" value="1" />
-
-            <label for="IsWholesale">Giá bán</label>
-            <select class="form-control" name="isWholesales">
-                <option value="false">Giá lẻ</option>
-                <option value="true">Giá sỉ</option>
-            </select>
+        <!-- Khách hàng -->
+        <div class="form-group row mb-3">
+            <label for="Customer" class="col-sm-2 col-form-label">Khách hàng</label>
+            <div class="col-sm-10">
+                <select class="form-control" asp-items="@(new SelectList(ViewBag.CustomerList, "Id", "Name"))" name="CustomerId" id="customer-dropdown"></select>
+            </div>
         </div>
-    </div>
 
-    <button type="button" class="btn btn-success" onclick="addProduct()">Thêm sản phẩm</button>
+        <!-- Khu vực thêm sản phẩm -->
+        <h3 class="mt-4 mb-3">Sản phẩm</h3>
+        <div id="product-list">
+            <div class="form-group row product-item mb-3">
+                <div class="col-md-4">
+                    <label for="Product">Sản phẩm</label>
+                    <select class="form-control" asp-items="@(new SelectList(ViewBag.ProductList, "Id", "Name"))" name="productIds" id="product-dropdown"></select>
+                </div>
+                <div class="col-md-2">
+                    <label for="Quantity">Số lượng</label>
+                    <input type="number" class="form-control" name="quantities" min="1" value="1" />
+                </div>
+                <div class="col-md-3">
+                    <label for="IsWholesale">Giá bán</label>
+                    <select class="form-control" name="isWholesales">
+                        <option value="false">Giá lẻ</option>
+                        <option value="true">Giá sỉ</option>
+                    </select>
+                </div>
+                <div class="col-md-3 d-flex align-items-end">
+                    <button type="button" class="btn btn-danger remove-product" onclick="removeProduct(this)">Xóa</button>
+                </div>
+            </div>
+        </div>
 
-    <div class="form-group">
-        <label for="Discount">Chiết khấu</label>
-        <input type="number" class="form-control" name="discount" step="0.01" value="0" min="0" />
-    </div>
+        <!-- Nút thêm sản phẩm -->
+        <div class="form-group text-end">
+            <button type="button" class="btn btn-success" onclick="addProduct()">+ Thêm sản phẩm</button>
+        </div>
 
-    <button type="submit" class="btn btn-primary">Tạo Hóa Đơn</button>
-</form>
+        <!-- Chiết khấu -->
+        <div class="form-group row mt-4 mb-4">
+            <label for="Discount" class="col-sm-2 col-form-label">Chiết khấu (%)</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" name="discount" step="0.01" value="0" min="0" />
+            </div>
+        </div>
+
+        <!-- Nút tạo hóa đơn -->
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-4">Tạo Hóa Đơn</button>
+        </div>
+    </form>
+</div>
+
+<!-- Thêm Select2 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <!-- JavaScript để thêm sản phẩm vào danh sách -->
 <script>
+    $(document).ready(function () {
+        // Khởi tạo Select2 cho dropdown khách hàng
+        $('#customer-dropdown').select2({
+            placeholder: "Tìm kiếm khách hàng...",
+            allowClear: true
+        });
+
+        // Khởi tạo Select2 cho dropdown sản phẩm
+        $('#product-dropdown').select2({
+            placeholder: "Tìm kiếm sản phẩm...",
+            allowClear: true
+        });
+    });
+
+    // Hàm để thêm sản phẩm
     function addProduct() {
         var productList = document.getElementById('product-list');
         var newProduct = document.querySelector('.product-item').cloneNode(true);
@@ -53,6 +92,22 @@
         newProduct.querySelector('input[name="quantities"]').value = 1;
         newProduct.querySelector('select[name="isWholesales"]').selectedIndex = 0;
 
+        // Append sản phẩm mới vào danh sách
         productList.appendChild(newProduct);
+
+        // Khởi tạo Select2 cho dropdown sản phẩm mới
+        $(newProduct).find('select[name="productIds"]').select2({
+            placeholder: "Tìm kiếm sản phẩm...",
+            allowClear: true
+        });
+    }
+
+    // Hàm để xóa sản phẩm
+    function removeProduct(element) {
+        if (document.querySelectorAll('.product-item').length > 1) {
+            element.closest('.product-item').remove();
+        } else {
+            alert("Cần ít nhất một sản phẩm trong hóa đơn.");
+        }
     }
 </script>
