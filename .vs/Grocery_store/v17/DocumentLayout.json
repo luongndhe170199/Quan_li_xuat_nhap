@@ -7,24 +7,48 @@
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\invoice\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\invoice\\revenue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\invoice\\revenue.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\customer\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -67,28 +87,12 @@
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\customer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\models\\grocerystorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AAC367CB-3326-4901-B186-E14FE9C7EBD7}|Grocery_store.csproj|c:\\solution prn212\\grocery_store\\grocery_store.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -530,57 +530,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Revenue.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Invoice\\Revenue.cshtml",
               "RelativeDocumentMoniker": "Views\\Invoice\\Revenue.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Invoice\\Revenue.cshtml",
               "RelativeToolTip": "Views\\Invoice\\Revenue.cshtml",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAAALoAAAAuAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T15:25:10.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T15:25:10.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Customer\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\Edit.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Customer\\Edit.cshtml",
               "RelativeToolTip": "Views\\Customer\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T14:38:16.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T14:38:16.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Customer\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\Create.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Customer\\Create.cshtml",
               "RelativeToolTip": "Views\\Customer\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-15T14:37:28.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Customer\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\Index.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Customer\\Index.cshtml",
               "RelativeToolTip": "Views\\Customer\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-15T14:36:32.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
@@ -588,21 +586,19 @@
               "RelativeToolTip": "Controllers\\CustomerController.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAcwBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T14:35:50.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T14:35:50.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Invoice\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Invoice\\Index.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Invoice\\Index.cshtml",
               "RelativeToolTip": "Views\\Invoice\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAABNAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T08:18:37.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T08:18:37.245Z"
             },
             {
               "$type": "Document",
@@ -612,14 +608,14 @@
               "RelativeDocumentMoniker": "Views\\Invoice\\Create.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Invoice\\Create.cshtml",
               "RelativeToolTip": "Views\\Invoice\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-15T08:17:45.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "InvoiceController.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Controllers\\InvoiceController.cs",
               "RelativeDocumentMoniker": "Controllers\\InvoiceController.cs",
@@ -627,12 +623,11 @@
               "RelativeToolTip": "Controllers\\InvoiceController.cs",
               "ViewState": "AQIAAFUBAAAAAAAAAAAmwHYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T08:16:50.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T08:16:50.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Customer.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\Customer.cs",
               "RelativeDocumentMoniker": "Models\\Customer.cs",
@@ -644,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Models\\OrderDetail.cs",
@@ -652,12 +647,11 @@
               "RelativeToolTip": "Models\\OrderDetail.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T07:58:42.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T07:58:42.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
@@ -665,24 +659,23 @@
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T07:58:35.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T07:58:35.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Product\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Edit.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Product\\Edit.cshtml",
               "RelativeToolTip": "Views\\Product\\Edit.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAUwDQAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-15T07:43:20.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Invoice.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "Models\\Invoice.cs",
@@ -690,12 +683,11 @@
               "RelativeToolTip": "Models\\Invoice.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T07:24:01.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T07:24:01.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "UnitOfMeasure.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\UnitOfMeasure.cs",
               "RelativeDocumentMoniker": "Models\\UnitOfMeasure.cs",
@@ -707,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -715,12 +707,11 @@
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T07:15:37.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T07:15:37.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "GroceryStoreContext.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Models\\GroceryStoreContext.cs",
               "RelativeDocumentMoniker": "Models\\GroceryStoreContext.cs",
@@ -732,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -744,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -756,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -768,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -780,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 10,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -792,25 +783,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Product\\Create.cshtml",
               "RelativeToolTip": "Views\\Product\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAA4AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-15T06:43:44.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAABYAAAAAAAAAAAAUwDkAAAAVAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEQAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-15T05:54:33.963Z"
             },
@@ -828,7 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -836,25 +827,23 @@
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T05:50:10.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T05:50:10.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Solution PRN212\\Grocery_store\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAAAJ8AAAAAAAAA",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAowJQAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T05:48:12.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-15T05:48:12.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -866,7 +855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -878,7 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -890,7 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Solution PRN212\\Grocery_store\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",

@@ -4,23 +4,26 @@
     ViewData["Title"] = "Danh sách sản phẩm";
 }
 
-<h2>Danh sách sản phẩm</h2>
+<h2 class="text-center mt-4" style="font-weight: bold; font-size: 2.5rem; letter-spacing: 1px;">🛒 Danh sách sản phẩm 🛒</h2>
 
-
-
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <a asp-action="Create" class="btn btn-primary mb-3">Thêm sản phẩm</a>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <a asp-action="Create" class="btn btn-success btn-lg">
+        <i class="fas fa-plus-circle"></i> Thêm sản phẩm
+    </a>
 
     @using (Html.BeginForm("Index", "Product", FormMethod.Get))
     {
-        <div class="input-group" style="width: 300px;">
-            <input type="text" name="searchTerm" placeholder="Tìm kiếm..." class="form-control" value="@Context.Request.Query["searchTerm"].FirstOrDefault()" />
-            <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+        <div class="input-group" style="width: 400px;">
+            <input type="text" name="searchTerm" placeholder="🔍 Tìm kiếm sản phẩm..." class="form-control" value="@Context.Request.Query["searchTerm"].FirstOrDefault()" style="border-radius: 20px 0 0 20px;" />
+            <button type="submit" class="btn btn-primary" style="border-radius: 0 20px 20px 0;">
+                <i class="fas fa-search"></i> Tìm kiếm
+            </button>
         </div>
     }
 </div>
-<table class="table table-striped">
-    <thead>
+
+<table class="table table-hover table-bordered">
+    <thead class="bg-dark text-light">
         <tr>
             <th>Tên sản phẩm</th>
             <th>Hình ảnh</th>
@@ -29,7 +32,7 @@
             <th>Giá bán lẻ</th>
             <th>Giá bán buôn</th>
             <th>Đơn vị đo</th>
-            <th>Hành Động</th>
+            <th>Hành động</th>
         </tr>
     </thead>
     <tbody>
@@ -40,21 +43,21 @@
                 <td>
                     @if (!string.IsNullOrEmpty(product.ImageUrl))
                     {
-                        <img src="@product.ImageUrl" alt="@product.Name" width="100" />
+                        <img src="@product.ImageUrl" alt="@product.Name" class="img-thumbnail" style="width: 80px;" />
                     }
                     else
                     {
-                        <span>Không có hình ảnh</span>
+                        <span class="text-muted">Không có hình ảnh</span>
                     }
                 </td>
                 <td>
                     @if (product.Quantity <= 0)
                     {
-                        <span class="text-danger">Hết hàng</span>
+                        <span class="badge bg-danger">Hết hàng</span>
                     }
                     else
                     {
-                        @product.Quantity
+                        <span class="badge bg-success">@product.Quantity</span>
                     }
                 </td>
                 <td>@product.ImportPrice</td>
@@ -62,12 +65,15 @@
                 <td>@product.WholesalePrice</td>
                 <td>@(product.UnitOfMeasure != null ? product.UnitOfMeasure.Name : "Không có đơn vị đo")</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-warning">Chỉnh sửa</a>
+                    <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-warning btn-sm">
+                        <i class="fas fa-edit"></i> Chỉnh sửa
+                    </a>
                     <form asp-action="DeleteConfirmed" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?');">
                         <input type="hidden" name="id" value="@product.Id" />
-                        <button type="submit" class="btn btn-danger">Xóa</button>
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i> Xóa
+                        </button>
                     </form>
-
                 </td>
             </tr>
         }

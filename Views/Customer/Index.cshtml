@@ -4,17 +4,19 @@
     ViewData["Title"] = "Danh sách khách hàng";
 }
 
-<h2>Danh sách khách hàng</h2>
+<h2 class="text-center mt-4" style="font-weight: bold; font-size: 2.5rem;">📋 Danh sách khách hàng</h2>
 
-<a asp-action="Create" class="btn btn-primary mb-3">Thêm khách hàng</a>
+<a asp-action="Create" class="btn btn-success mb-4">
+    <i class="fas fa-plus-circle"></i> Thêm khách hàng
+</a>
 
-<table class="table table-striped">
-    <thead>
+<table class="table table-hover table-bordered">
+    <thead class="bg-primary text-white">
         <tr>
-            <th>Tên khách hàng</th>
-            <th>Email</th>
-            <th>Số điện thoại</th>
-            <th>Hành động</th>
+            <th scope="col">Tên khách hàng</th>
+            <th scope="col">Email</th>
+            <th scope="col">Số điện thoại</th>
+            <th scope="col">Hành động</th>
         </tr>
     </thead>
     <tbody>
@@ -25,10 +27,14 @@
                 <td>@customer.Email</td>
                 <td>@customer.Phone</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@customer.Id" class="btn btn-warning">Chỉnh sửa</a>
+                    <a asp-action="Edit" asp-route-id="@customer.Id" class="btn btn-warning btn-sm">
+                        <i class="fas fa-edit"></i> Chỉnh sửa
+                    </a>
                     <form asp-action="DeleteConfirmed" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn muốn xóa khách hàng này không?');">
                         <input type="hidden" name="id" value="@customer.Id" />
-                        <button type="submit" class="btn btn-danger">Xóa</button>
+                        <button type="submit" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i> Xóa
+                        </button>
                     </form>
                 </td>
             </tr>
