@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\Nike Dunk Low Michigan State CW1590-1022244730740.png"
     },
     {
+      "Id": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242147515.jpg",
+      "PackagePath": "staticwebassets\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242147515.jpg"
+    },
+    {
       "Id": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242508623.jpg",
       "PackagePath": "staticwebassets\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242508623.jpg"
     },
@@ -67,6 +71,10 @@
     {
       "Id": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2245421120.jpg",
       "PackagePath": "staticwebassets\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2245421120.jpg"
+    },
+    {
+      "Id": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\thantai.jpg",
+      "PackagePath": "staticwebassets\\images\\thantai.jpg"
     },
     {
       "Id": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\js\\site.js",

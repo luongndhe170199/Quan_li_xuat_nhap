@@ -1,8 +1,51 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+<link href="~/css/site.css" rel="stylesheet" />
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4 glitter-text" style="
+    font-family: 'Brush Script MT', cursive;
+    font-size: 96px;
+    background: linear-gradient(to right, #FF0000 0%, #FFD700 100%);
+    -webkit-background-clip: text;
+    color: transparent; /* Hiệu ứng chuyển màu từ đỏ sang vàng */
+    text-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
+    font-weight: bold;
+    animation: glitter 1.5s infinite alternate;
+">
+        MUA MAY BÁN ĐẮT
+    </h1>
+
+    <!-- Phần nội dung với câu đối và ảnh Ô Thần Tài -->
+    <div style="display: flex; align-items: center; justify-content: center; padding: 40px;">
+        <!-- Câu đối bên trái -->
+        <div style="margin-right: 40px; background-color: #FFD700; border-radius: 10px; padding: 20px; border: 5px solid red; width: 120px; text-align: center;
+                    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); animation: glitter 2s infinite alternate;">
+            <p style="color: red; font-size: 32px; font-family: 'Noto Serif', serif; margin: 0; line-height: 2;">
+                Tài<br />
+                Lộc<br />
+                Đầy<br />
+                Nhà
+            </p>
+        </div>
+
+        <!-- Ảnh Ô Thần Tài -->
+        <div style="box-shadow: 0 0 30px rgba(255, 165, 0, 0.7); border-radius: 10px; overflow: hidden; animation: glitter 2s infinite alternate;">
+            <img src="~/images/thantai.jpg" alt="Ô Thần Tài" style="max-width: 100%; height: auto; border-radius: 10px;" />
+        </div>
+
+        <!-- Câu đối bên phải -->
+        <div style="margin-left: 40px; background-color: #FFD700; border-radius: 10px; padding: 20px; border: 5px solid red; width: 120px; text-align: center;
+                    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7); animation: glitter 2s infinite alternate;">
+            <p style="color: red; font-size: 32px; font-family: 'Noto Serif', serif; margin: 0; line-height: 2;">
+                Phúc<br />
+                Thọ<br />
+                Khang<br />
+                Ninh
+            </p>
+        </div>
+    </div>
 </div>
+
+<!-- Thêm CSS cho hiệu ứng lấp lánh -->
+

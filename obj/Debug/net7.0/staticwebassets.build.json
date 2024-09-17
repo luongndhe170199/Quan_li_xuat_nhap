@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "myQnyUVCpp2CEEqHFDqQ5wG/bI1IGepkwXRm2mnhHpg=",
+  "Hash": "iyi/dfVKizllILL/EVTIvoSymWT7Yh3nXI9sjw0BA6c=",
   "Source": "Grocery_store",
   "BasePath": "_content/Grocery_store",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242147515.jpg",
+      "SourceId": "Grocery_store",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\",
+      "BasePath": "_content/Grocery_store",
+      "RelativePath": "images/cac-mat-hang-tap-hoa-ban-chay-nhat-2242147515.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242147515.jpg"
     },
     {
       "Identity": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\cac-mat-hang-tap-hoa-ban-chay-nhat-2242508623.jpg",
@@ -357,6 +376,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Nike Dunk Low Michigan State CW1590-1022244730740.png"
+    },
+    {
+      "Identity": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\images\\thantai.jpg",
+      "SourceId": "Grocery_store",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\",
+      "BasePath": "_content/Grocery_store",
+      "RelativePath": "images/thantai.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\thantai.jpg"
     },
     {
       "Identity": "C:\\Solution PRN212\\Grocery_store\\wwwroot\\js\\site.js",
